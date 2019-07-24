@@ -2,50 +2,15 @@
 #include <stdlib.h>
 #include "mpi.h"
 
-static int m;
-static int n;
+static int m,n;
 
-double* allocVec() { return malloc(m * sizeof(double)); }
-double* allocMat() { return malloc(m * n*sizeof(double)); }
-
-double* assignMat(double* mat, char **argv){
-        int counter = 3;
-        for(int i = 0; i < (m*n); i++){
-                mat[i] = atoi(argv[counter]);
-                counter++;
-        };
-        return mat;
-}
-double* assignVec(double* vec, char **argv){
-        int counter = (m*n)+3;
-        for(int i = 0; i < n; i++){ vec[i] = atoi(argv[counter]); };
-        return vec;
-}
-
-void printMatVec(double* mat, double* vec, double* result ){
-        //printmat
-        for (int i=0; i<m;i++) {
-                for (int j=0; j<n;j++) {
-                        printf("%f ",mat[i+j]);
-                }
-                printf("\n");
-        }
-        printf("    *\n");
-
-        //print vec
-        for (int i=0; i<(n);i++) {
-                printf("%f\n",vec[i]);
-        }
-        printf("    =\n");
-
-        //print result
-        for (int i=0; i<m;i++) {
-                printf("%f\n",result[i]);
-        }
-}
+//headers
+double* assignVec(double* vec, char **argv);
+double* assignMat(double* mat, char **argv);
+void printMatVec(double* mat, double* vec, double* result );
 
 //if you want to input the full matrix use pbs_work,otherwise use pbs_workMat
-//for both first user inputs are the matrix dimensions 
+//for both: first user inputs are the matrix dimensions
 int main(int argc, char **argv){
         m = atoi(argv[1]);
         n = atoi(argv[2]);
@@ -64,11 +29,10 @@ int main(int argc, char **argv){
                 myend = m;
                 numele = myend - mystart;
         }
-        //printf("Rank: %d Numele: %d\n",rank,numele);
 
 	double startalloc=MPI_Wtime(); //time alloc+init
-	double *vec = allocVec();
-        double *mat = allocMat();
+	double *vec = malloc(m * sizeof(double));
+        double *mat = malloc(m * n*sizeof(double));
         double *result = (double*)malloc(numele*sizeof(double));
 
 	double *resultAll;
@@ -106,31 +70,60 @@ int main(int argc, char **argv){
 
 	double endfull = MPI_Wtime();
 
-	if  (rank==0) {
+	if (rank==0) {
 		printf("Number of Ranks: %d\n",numRanks);
 		printf("Full Time: %f\n",endfull-startfull);
 		printf("Alloc+Init Time: %f\n", endalloc-startalloc);
 		printf("Calc Time: %f\n", endcalc-startcalc);
 		printf("Gather Time: %f\n\n", endgather-startgather);
-		if (m+n < 20) {
-			printMatVec(mat,vec,resultAll);
-		}
+		if (m+n < 20){ printMatVec(mat,vec,resultAll); }
 		free(resultAll);
 	}
 	free(vec);
         free(mat);
         free(result);
-	//free(resultAll);
 
 	MPI_Finalize();
-
-	//free(vec);
-        //free(mat);
-        //free(result);
-	//free(resultAll);
-
 	return 0;
 }
 
 
+
+//helper method to print out dot product
+void printMatVec(double* mat, double* vec, double* result ){
+        //printmat
+        for (int i=0; i<m;i++) {
+                for (int j=0; j<n;j++) {
+                        printf("%f ",mat[i+j]);
+                }
+                printf("\n");
+        }
+        printf("    *\n");
+
+        //print vec
+        for (int i=0; i<(n);i++) {
+                printf("%f\n",vec[i]);
+        }
+        printf("    =\n");
+
+        //print result
+        for (int i=0; i<m;i++) {
+                printf("%f\n",result[i]);
+        }
+}
+
+//if user gives matrix and vector then read in
+double* assignMat(double* mat, char **argv){
+        int counter = 3;
+        for(int i = 0; i < (m*n); i++){
+                mat[i] = atoi(argv[counter]);
+                counter++;
+        };
+        return mat;
+}
+double* assignVec(double* vec, char **argv){
+        int counter = (m*n)+3;
+        for(int i = 0; i < n; i++){ vec[i] = atoi(argv[counter]); };
+        return vec;
+}
 
