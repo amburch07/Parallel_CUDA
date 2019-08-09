@@ -1,0 +1,312 @@
+Number of ranks vs time to execute
+Serial on Reinhardt
+Rank 0 Converting time 0.634778
+Rank 0 Sub result calculation time 0.303895
+Full Time: 1.244213
+Rank 0 Converting time 0.895924
+Rank 1 Sub result calculation time 0.075934
+Rank 2 Sub result calculation time 0.077169
+Rank 3 Sub result calculation time 0.076009
+Rank 0 Sub result calculation time 0.081324
+Full Time: 1.621673
+*** Error in `./mvp-student.cx': free(): invalid pointer: 0x00000000006aaea8 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7fc8512637e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7fc85126c37a]
+/lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7fc85127053c]
+./mvp-student.cx(main+0x3ad)[0x430d91]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7fc85120c830]
+./mvp-student.cx(_start+0x29)[0x42fa19]
+======= Memory map: ========
+00400000-004a9000 r-xp 00000000 00:30 26741896                           /home/huynha1/LA2/mvp-student.cx
+006a9000-006aa000 r--p 000a9000 00:30 26741896                           /home/huynha1/LA2/mvp-student.cx
+006aa000-006ac000 rw-p 000aa000 00:30 26741896                           /home/huynha1/LA2/mvp-student.cx
+006ac000-00719000 rw-p 00000000 00:00 0 
+00e53000-30c24000 rw-p 00000000 00:00 0                                  [heap]
+7fc840000000-7fc840021000 rw-p 00000000 00:00 0 
+7fc840021000-7fc844000000 ---p 00000000 00:00 0 
+7fc848000000-7fc848021000 rw-p 00000000 00:00 0 
+7fc848021000-7fc84c000000 ---p 00000000 00:00 0 
+7fc84e33a000-7fc84e33b000 ---p 00000000 00:00 0 
+7fc84e33b000-7fc84eb3b000 rw-p 00000000 00:00 0 
+7fc84f614000-7fc84f615000 ---p 00000000 00:00 0 
+7fc84f615000-7fc84fe15000 rw-p 00000000 00:00 0 
+7fc850a31000-7fc850a33000 r-xp 00000000 fd:00 16388534                   /lib/x86_64-linux-gnu/libutil-2.23.so
+7fc850a33000-7fc850c32000 ---p 00002000 fd:00 16388534                   /lib/x86_64-linux-gnu/libutil-2.23.so
+7fc850c32000-7fc850c33000 r--p 00001000 fd:00 16388534                   /lib/x86_64-linux-gnu/libutil-2.23.so
+7fc850c33000-7fc850c34000 rw-p 00002000 fd:00 16388534                   /lib/x86_64-linux-gnu/libutil-2.23.so
+7fc850c34000-7fc850d28000 r-xp 00000000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7fc850d28000-7fc850f28000 ---p 000f4000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7fc850f28000-7fc850f2b000 r--p 000f4000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7fc850f2b000-7fc850f31000 rw-p 000f7000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7fc850f31000-7fc850f38000 rw-p 00000000 00:00 0 
+7fc850f38000-7fc850fe5000 r-xp 00000000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7fc850fe5000-7fc8511e4000 ---p 000ad000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7fc8511e4000-7fc8511e6000 r--p 000ac000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7fc8511e6000-7fc8511ea000 rw-p 000ae000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7fc8511ea000-7fc8511ec000 rw-p 00000000 00:00 0 
+7fc8511ec000-7fc8513ac000 r-xp 00000000 fd:00 16388527                   /lib/x86_64-linux-gnu/libc-2.23.so
+7fc8513ac000-7fc8515ac000 ---p 001c0000 fd:00 16388527                   /lib/x86_64-linux-gnu/libc-2.23.so
+7fc8515ac000-7fc8515b0000 r--p 001c0000 fd:00 16388527                   /lib/x86_64-linux-gnu/libc-2.23.so
+7fc8515b0000-7fc8515b2000 rw-p 001c4000 fd:00 16388527                   /lib/x86_64-linux-gnu/libc-2.23.so
+7fc8515b2000-7fc8515b6000 rw-p 00000000 00:00 0 
+7fc8515b6000-7fc8515ce000 r-xp 00000000 fd:00 16388526                   /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fc8515ce000-7fc8517cd000 ---p 00018000 fd:00 16388526                   /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fc8517cd000-7fc8517ce000 r--p 00017000 fd:00 16388526                   /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fc8517ce000-7fc8517cf000 rw-p 00018000 fd:00 16388526                   /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fc8517cf000-7fc8517d3000 rw-p 00000000 00:00 0 
+7fc8517d3000-7fc8517f4000 r-xp 00000000 fd:00 23332960                   /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fc8517f4000-7fc8519f3000 ---p 00021000 fd:00 23332960                   /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fc8519f3000-7fc8519f4000 r--p 00020000 fd:00 23332960                   /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fc8519f4000-7fc8519f5000 rw-p 00021000 fd:00 23332960                   /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fc8519f5000-7fc851a0b000 r-xp 00000000 fd:00 16384525                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc851a0b000-7fc851c0a000 ---p 00016000 fd:00 16384525                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc851c0a000-7fc851c0b000 rw-p 00015000 fd:00 16384525                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc851c0b000-7fc851d7d000 r-xp 00000000 fd:00 23332903                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fc851d7d000-7fc851f7d000 ---p 00172000 fd:00 23332903                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fc851f7d000-7fc851f87000 r--p 00172000 fd:00 23332903                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fc851f87000-7fc851f89000 rw-p 0017c000 fd:00 23332903                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fc851f89000-7fc851f8d000 rw-p 00000000 00:00 0 
+7fc851f8d000-7fc851f90000 r-xp 00000000 fd:00 16388529                   /lib/x86_64-linux-gnu/libdl-2.23.so
+7fc851f90000-7fc85218f000 ---p 00003000 fd:00 16388529                   /lib/x86_64-linux-gnu/libdl-2.23.so
+7fc85218f000-7fc852190000 r--p 00002000 fd:00 16388529                   /lib/x86_64-linux-gnu/libdl-2.23.so
+7fc852190000-7fc852191000 rw-p 00003000 fd:00 16388529                   /lib/x86_64-linux-gnu/libdl-2.23.so
+7fc852191000-7fc852198000 r-xp 00000000 fd:00 16388545                   /lib/x86_64-linux-gnu/librt-2.23.so
+7fc852198000-7fc852397000 ---p 00007000 fd:00 16388545                   /lib/x86_64-linux-gnu/librt-2.23.so
+7fc852397000-7fc852398000 r--p 00006000 fd:00 16388545                   /lib/x86_64-linux-gnu/librt-2.23.so
+7fc852398000-7fc852399000 rw-p 00007000 fd:00 16388545                   /lib/x86_64-linux-gnu/librt-2.23.so
+7fc852399000-7fc852477000 r-xp 00000000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7fc852477000-7fc852677000 ---p 000de000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7fc852677000-7fc852678000 r--p 000de000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7fc852678000-7fc852689000 rw-p 000df000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7fc852689000-7fc85269a000 rw-p 00000000 00:00 0 
+7fc85269a000-7fc8527a2000 r-xp 00000000 fd:00 16388523                   /lib/x86_64-linux-gnu/libm-2.23.so
+7fc8527a2000-7fc8529a1000 ---p 00108000 fd:00 16388523                   /lib/x86_64-linux-gnu/libm-2.23.so
+7fc8529a1000-7fc8529a2000 r--p 00107000 fd:00 16388523                   /lib/x86_64-linux-gnu/libm-2.23.so
+7fc8529a2000-7fc8529a3000 rw-p 00108000 fd:00 16388523                   /lib/x86_64-linux-gnu/libm-2.23.so
+7fc8529a3000-7fc8529c9000 r-xp 00000000 fd:00 16388525                   /lib/x86_64-linux-gnu/ld-2.23.so
+7fc852ab2000-7fc852bbc000 rw-p 00000000 00:00 0 
+7fc852bc7000-7fc852bc8000 rw-p 00000000 00:00 0 
+7fc852bc8000-7fc852bc9000 r--p 00025000 fd:00 16388525                   /lib/x86_64-linux-gnu/ld-2.23.so
+7fc852bc9000-7fc852bca000 rw-p 00026000 fd:00 16388525                   /lib/x86_64-linux-gnu/ld-2.23.so
+7fc852bca000-7fc852bcb000 rw-p 00000000 00:00 0 
+7ffd529cb000-7ffd52a4f000 rw-p 00000000 00:00 0                          [stack]
+7ffd52abd000-7ffd52ac0000 r--p 00000000 00:00 0                          [vvar]
+7ffd52ac0000-7ffd52ac2000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+[tracer:03490] *** Process received signal ***
+[tracer:03490] Signal: Aborted (6)
+[tracer:03490] Signal code:  (-6)
+[tracer:03490] [ 0] /lib/x86_64-linux-gnu/libpthread.so.0(+0x11390)[0x7fc8515c7390]
+[tracer:03490] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7fc851221428]
+[tracer:03490] [ 2] /lib/x86_64-linux-gnu/libc.so.6(abort+0x16a)[0x7fc85122302a]
+[tracer:03490] [ 3] /lib/x86_64-linux-gnu/libc.so.6(+0x777ea)[0x7fc8512637ea]
+[tracer:03490] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7fc85126c37a]
+[tracer:03490] [ 5] /lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7fc85127053c]
+[tracer:03490] [ 6] ./mvp-student.cx(main+0x3ad)[0x430d91]
+[tracer:03490] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7fc85120c830]
+[tracer:03490] [ 8] ./mvp-student.cx(_start+0x29)[0x42fa19]
+[tracer:03490] *** End of error message ***
+*** Error in `./mvp-student.cx': free(): invalid pointer: 0x00000000006aaea8 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7fd1af8217e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7fd1af82a37a]
+/lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7fd1af82e53c]
+./mvp-student.cx(main+0x3ad)[0x430d91]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7fd1af7ca830]
+./mvp-student.cx(_start+0x29)[0x42fa19]
+======= Memory map: ========
+00400000-004a9000 r-xp 00000000 00:30 26741896                           /home/huynha1/LA2/mvp-student.cx
+006a9000-006aa000 r--p 000a9000 00:30 26741896                           /home/huynha1/LA2/mvp-student.cx
+006aa000-006ac000 rw-p 000aa000 00:30 26741896                           /home/huynha1/LA2/mvp-student.cx
+006ac000-00719000 rw-p 00000000 00:00 0 
+02183000-31f54000 rw-p 00000000 00:00 0                                  [heap]
+7fd1a0000000-7fd1a0021000 rw-p 00000000 00:00 0 
+7fd1a0021000-7fd1a4000000 ---p 00000000 00:00 0 
+7fd1a8000000-7fd1a8021000 rw-p 00000000 00:00 0 
+7fd1a8021000-7fd1ac000000 ---p 00000000 00:00 0 
+7fd1ac8f8000-7fd1ac8f9000 ---p 00000000 00:00 0 
+7fd1ac8f9000-7fd1ad0f9000 rw-p 00000000 00:00 0 
+7fd1adbd2000-7fd1adbd3000 ---p 00000000 00:00 0 
+7fd1adbd3000-7fd1ae3d3000 rw-p 00000000 00:00 0 
+7fd1aefef000-7fd1aeff1000 r-xp 00000000 fd:00 6295990                    /lib/x86_64-linux-gnu/libutil-2.23.so
+7fd1aeff1000-7fd1af1f0000 ---p 00002000 fd:00 6295990                    /lib/x86_64-linux-gnu/libutil-2.23.so
+7fd1af1f0000-7fd1af1f1000 r--p 00001000 fd:00 6295990                    /lib/x86_64-linux-gnu/libutil-2.23.so
+7fd1af1f1000-7fd1af1f2000 rw-p 00002000 fd:00 6295990                    /lib/x86_64-linux-gnu/libutil-2.23.so
+7fd1af1f2000-7fd1af2e6000 r-xp 00000000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7fd1af2e6000-7fd1af4e6000 ---p 000f4000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7fd1af4e6000-7fd1af4e9000 r--p 000f4000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7fd1af4e9000-7fd1af4ef000 rw-p 000f7000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7fd1af4ef000-7fd1af4f6000 rw-p 00000000 00:00 0 
+7fd1af4f6000-7fd1af5a3000 r-xp 00000000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7fd1af5a3000-7fd1af7a2000 ---p 000ad000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7fd1af7a2000-7fd1af7a4000 r--p 000ac000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7fd1af7a4000-7fd1af7a8000 rw-p 000ae000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7fd1af7a8000-7fd1af7aa000 rw-p 00000000 00:00 0 
+7fd1af7aa000-7fd1af96a000 r-xp 00000000 fd:00 6295983                    /lib/x86_64-linux-gnu/libc-2.23.so
+7fd1af96a000-7fd1afb6a000 ---p 001c0000 fd:00 6295983                    /lib/x86_64-linux-gnu/libc-2.23.so
+7fd1afb6a000-7fd1afb6e000 r--p 001c0000 fd:00 6295983                    /lib/x86_64-linux-gnu/libc-2.23.so
+7fd1afb6e000-7fd1afb70000 rw-p 001c4000 fd:00 6295983                    /lib/x86_64-linux-gnu/libc-2.23.so
+7fd1afb70000-7fd1afb74000 rw-p 00000000 00:00 0 
+7fd1afb74000-7fd1afb8c000 r-xp 00000000 fd:00 6295982                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fd1afb8c000-7fd1afd8b000 ---p 00018000 fd:00 6295982                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fd1afd8b000-7fd1afd8c000 r--p 00017000 fd:00 6295982                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fd1afd8c000-7fd1afd8d000 rw-p 00018000 fd:00 6295982                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fd1afd8d000-7fd1afd91000 rw-p 00000000 00:00 0 
+7fd1afd91000-7fd1afdb2000 r-xp 00000000 fd:00 20449376                   /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fd1afdb2000-7fd1affb1000 ---p 00021000 fd:00 20449376                   /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fd1affb1000-7fd1affb2000 r--p 00020000 fd:00 20449376                   /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fd1affb2000-7fd1affb3000 rw-p 00021000 fd:00 20449376                   /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fd1affb3000-7fd1affc9000 r-xp 00000000 fd:00 6291981                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fd1affc9000-7fd1b01c8000 ---p 00016000 fd:00 6291981                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fd1b01c8000-7fd1b01c9000 rw-p 00015000 fd:00 6291981                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fd1b01c9000-7fd1b033b000 r-xp 00000000 fd:00 20449319                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fd1b033b000-7fd1b053b000 ---p 00172000 fd:00 20449319                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fd1b053b000-7fd1b0545000 r--p 00172000 fd:00 20449319                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fd1b0545000-7fd1b0547000 rw-p 0017c000 fd:00 20449319                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fd1b0547000-7fd1b054b000 rw-p 00000000 00:00 0 
+7fd1b054b000-7fd1b054e000 r-xp 00000000 fd:00 6295985                    /lib/x86_64-linux-gnu/libdl-2.23.so
+7fd1b054e000-7fd1b074d000 ---p 00003000 fd:00 6295985                    /lib/x86_64-linux-gnu/libdl-2.23.so
+7fd1b074d000-7fd1b074e000 r--p 00002000 fd:00 6295985                    /lib/x86_64-linux-gnu/libdl-2.23.so
+7fd1b074e000-7fd1b074f000 rw-p 00003000 fd:00 6295985                    /lib/x86_64-linux-gnu/libdl-2.23.so
+7fd1b074f000-7fd1b0756000 r-xp 00000000 fd:00 6296001                    /lib/x86_64-linux-gnu/librt-2.23.so
+7fd1b0756000-7fd1b0955000 ---p 00007000 fd:00 6296001                    /lib/x86_64-linux-gnu/librt-2.23.so
+7fd1b0955000-7fd1b0956000 r--p 00006000 fd:00 6296001                    /lib/x86_64-linux-gnu/librt-2.23.so
+7fd1b0956000-7fd1b0957000 rw-p 00007000 fd:00 6296001                    /lib/x86_64-linux-gnu/librt-2.23.so
+7fd1b0957000-7fd1b0a35000 r-xp 00000000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7fd1b0a35000-7fd1b0c35000 ---p 000de000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7fd1b0c35000-7fd1b0c36000 r--p 000de000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7fd1b0c36000-7fd1b0c47000 rw-p 000df000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7fd1b0c47000-7fd1b0c58000 rw-p 00000000 00:00 0 
+7fd1b0c58000-7fd1b0d60000 r-xp 00000000 fd:00 6295979                    /lib/x86_64-linux-gnu/libm-2.23.so
+7fd1b0d60000-7fd1b0f5f000 ---p 00108000 fd:00 6295979                    /lib/x86_64-linux-gnu/libm-2.23.so
+7fd1b0f5f000-7fd1b0f60000 r--p 00107000 fd:00 6295979                    /lib/x86_64-linux-gnu/libm-2.23.so
+7fd1b0f60000-7fd1b0f61000 rw-p 00108000 fd:00 6295979                    /lib/x86_64-linux-gnu/libm-2.23.so
+7fd1b0f61000-7fd1b0f87000 r-xp 00000000 fd:00 6295981                    /lib/x86_64-linux-gnu/ld-2.23.so
+7fd1b1070000-7fd1b117a000 rw-p 00000000 00:00 0 
+7fd1b1185000-7fd1b1186000 rw-p 00000000 00:00 0 
+7fd1b1186000-7fd1b1187000 r--p 00025000 fd:00 6295981                    /lib/x86_64-linux-gnu/ld-2.23.so
+7fd1b1187000-7fd1b1188000 rw-p 00026000 fd:00 6295981                    /lib/x86_64-linux-gnu/ld-2.23.so
+7fd1b1188000-7fd1b1189000 rw-p 00000000 00:00 0 
+7ffe235dc000-7ffe23660000 rw-p 00000000 00:00 0                          [stack]
+7ffe237b0000-7ffe237b3000 r--p 00000000 00:00 0                          [vvar]
+7ffe237b3000-7ffe237b5000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+[lucio:42804] *** Process received signal ***
+[lucio:42804] Signal: Aborted (6)
+[lucio:42804] Signal code:  (-6)
+[lucio:42804] [ 0] /lib/x86_64-linux-gnu/libpthread.so.0(+0x11390)[0x7fd1afb85390]
+[lucio:42804] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7fd1af7df428]
+[lucio:42804] [ 2] /lib/x86_64-linux-gnu/libc.so.6(abort+0x16a)[0x7fd1af7e102a]
+[lucio:42804] [ 3] /lib/x86_64-linux-gnu/libc.so.6(+0x777ea)[0x7fd1af8217ea]
+[lucio:42804] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7fd1af82a37a]
+[lucio:42804] [ 5] /lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7fd1af82e53c]
+[lucio:42804] [ 6] ./mvp-student.cx(main+0x3ad)[0x430d91]
+[lucio:42804] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7fd1af7ca830]
+[lucio:42804] [ 8] ./mvp-student.cx(_start+0x29)[0x42fa19]
+[lucio:42804] *** End of error message ***
+*** Error in `./mvp-student.cx': free(): invalid pointer: 0x00000000006aaea8 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7f7f939f97e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7f7f93a0237a]
+/lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7f7f93a0653c]
+./mvp-student.cx(main+0x3ad)[0x430d91]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f7f939a2830]
+./mvp-student.cx(_start+0x29)[0x42fa19]
+======= Memory map: ========
+00400000-004a9000 r-xp 00000000 00:30 26741896                           /home/huynha1/LA2/mvp-student.cx
+006a9000-006aa000 r--p 000a9000 00:30 26741896                           /home/huynha1/LA2/mvp-student.cx
+006aa000-006ac000 rw-p 000aa000 00:30 26741896                           /home/huynha1/LA2/mvp-student.cx
+006ac000-00719000 rw-p 00000000 00:00 0 
+009ca000-3079b000 rw-p 00000000 00:00 0                                  [heap]
+7f7f84000000-7f7f84021000 rw-p 00000000 00:00 0 
+7f7f84021000-7f7f88000000 ---p 00000000 00:00 0 
+7f7f8c000000-7f7f8c021000 rw-p 00000000 00:00 0 
+7f7f8c021000-7f7f90000000 ---p 00000000 00:00 0 
+7f7f90ad0000-7f7f90ad1000 ---p 00000000 00:00 0 
+7f7f90ad1000-7f7f912d1000 rw-p 00000000 00:00 0 
+7f7f91daa000-7f7f91dab000 ---p 00000000 00:00 0 
+7f7f91dab000-7f7f925ab000 rw-p 00000000 00:00 0 
+7f7f931c7000-7f7f931c9000 r-xp 00000000 fd:00 20451768                   /lib/x86_64-linux-gnu/libutil-2.23.so
+7f7f931c9000-7f7f933c8000 ---p 00002000 fd:00 20451768                   /lib/x86_64-linux-gnu/libutil-2.23.so
+7f7f933c8000-7f7f933c9000 r--p 00001000 fd:00 20451768                   /lib/x86_64-linux-gnu/libutil-2.23.so
+7f7f933c9000-7f7f933ca000 rw-p 00002000 fd:00 20451768                   /lib/x86_64-linux-gnu/libutil-2.23.so
+7f7f933ca000-7f7f934be000 r-xp 00000000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7f7f934be000-7f7f936be000 ---p 000f4000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7f7f936be000-7f7f936c1000 r--p 000f4000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7f7f936c1000-7f7f936c7000 rw-p 000f7000 00:30 22282263                   /opt/openmpi/lib/libopen-pal.so.40.1.0
+7f7f936c7000-7f7f936ce000 rw-p 00000000 00:00 0 
+7f7f936ce000-7f7f9377b000 r-xp 00000000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7f7f9377b000-7f7f9397a000 ---p 000ad000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7f7f9397a000-7f7f9397c000 r--p 000ac000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7f7f9397c000-7f7f93980000 rw-p 000ae000 00:30 22282360                   /opt/openmpi/lib/libopen-rte.so.40.0.1
+7f7f93980000-7f7f93982000 rw-p 00000000 00:00 0 
+7f7f93982000-7f7f93b42000 r-xp 00000000 fd:00 20451761                   /lib/x86_64-linux-gnu/libc-2.23.so
+7f7f93b42000-7f7f93d42000 ---p 001c0000 fd:00 20451761                   /lib/x86_64-linux-gnu/libc-2.23.so
+7f7f93d42000-7f7f93d46000 r--p 001c0000 fd:00 20451761                   /lib/x86_64-linux-gnu/libc-2.23.so
+7f7f93d46000-7f7f93d48000 rw-p 001c4000 fd:00 20451761                   /lib/x86_64-linux-gnu/libc-2.23.so
+7f7f93d48000-7f7f93d4c000 rw-p 00000000 00:00 0 
+7f7f93d4c000-7f7f93d64000 r-xp 00000000 fd:00 20451760                   /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f7f93d64000-7f7f93f63000 ---p 00018000 fd:00 20451760                   /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f7f93f63000-7f7f93f64000 r--p 00017000 fd:00 20451760                   /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f7f93f64000-7f7f93f65000 rw-p 00018000 fd:00 20451760                   /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f7f93f65000-7f7f93f69000 rw-p 00000000 00:00 0 
+7f7f93f69000-7f7f93f8a000 r-xp 00000000 fd:00 6555744                    /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7f7f93f8a000-7f7f94189000 ---p 00021000 fd:00 6555744                    /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7f7f94189000-7f7f9418a000 r--p 00020000 fd:00 6555744                    /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7f7f9418a000-7f7f9418b000 rw-p 00021000 fd:00 6555744                    /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7f7f9418b000-7f7f941a1000 r-xp 00000000 fd:00 20447757                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f7f941a1000-7f7f943a0000 ---p 00016000 fd:00 20447757                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f7f943a0000-7f7f943a1000 rw-p 00015000 fd:00 20447757                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f7f943a1000-7f7f94513000 r-xp 00000000 fd:00 6555687                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f7f94513000-7f7f94713000 ---p 00172000 fd:00 6555687                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f7f94713000-7f7f9471d000 r--p 00172000 fd:00 6555687                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f7f9471d000-7f7f9471f000 rw-p 0017c000 fd:00 6555687                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f7f9471f000-7f7f94723000 rw-p 00000000 00:00 0 
+7f7f94723000-7f7f94726000 r-xp 00000000 fd:00 20451763                   /lib/x86_64-linux-gnu/libdl-2.23.so
+7f7f94726000-7f7f94925000 ---p 00003000 fd:00 20451763                   /lib/x86_64-linux-gnu/libdl-2.23.so
+7f7f94925000-7f7f94926000 r--p 00002000 fd:00 20451763                   /lib/x86_64-linux-gnu/libdl-2.23.so
+7f7f94926000-7f7f94927000 rw-p 00003000 fd:00 20451763                   /lib/x86_64-linux-gnu/libdl-2.23.so
+7f7f94927000-7f7f9492e000 r-xp 00000000 fd:00 20451779                   /lib/x86_64-linux-gnu/librt-2.23.so
+7f7f9492e000-7f7f94b2d000 ---p 00007000 fd:00 20451779                   /lib/x86_64-linux-gnu/librt-2.23.so
+7f7f94b2d000-7f7f94b2e000 r--p 00006000 fd:00 20451779                   /lib/x86_64-linux-gnu/librt-2.23.so
+7f7f94b2e000-7f7f94b2f000 rw-p 00007000 fd:00 20451779                   /lib/x86_64-linux-gnu/librt-2.23.so
+7f7f94b2f000-7f7f94c0d000 r-xp 00000000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7f7f94c0d000-7f7f94e0d000 ---p 000de000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7f7f94e0d000-7f7f94e0e000 r--p 000de000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7f7f94e0e000-7f7f94e1f000 rw-p 000df000 00:30 22282554                   /opt/openmpi/lib/libmpi.so.40.0.1
+7f7f94e1f000-7f7f94e30000 rw-p 00000000 00:00 0 
+7f7f94e30000-7f7f94f38000 r-xp 00000000 fd:00 20451757                   /lib/x86_64-linux-gnu/libm-2.23.so
+7f7f94f38000-7f7f95137000 ---p 00108000 fd:00 20451757                   /lib/x86_64-linux-gnu/libm-2.23.so
+7f7f95137000-7f7f95138000 r--p 00107000 fd:00 20451757                   /lib/x86_64-linux-gnu/libm-2.23.so
+7f7f95138000-7f7f95139000 rw-p 00108000 fd:00 20451757                   /lib/x86_64-linux-gnu/libm-2.23.so
+7f7f95139000-7f7f9515f000 r-xp 00000000 fd:00 20451759                   /lib/x86_64-linux-gnu/ld-2.23.so
+7f7f95248000-7f7f95352000 rw-p 00000000 00:00 0 
+7f7f9535d000-7f7f9535e000 rw-p 00000000 00:00 0 
+7f7f9535e000-7f7f9535f000 r--p 00025000 fd:00 20451759                   /lib/x86_64-linux-gnu/ld-2.23.so
+7f7f9535f000-7f7f95360000 rw-p 00026000 fd:00 20451759                   /lib/x86_64-linux-gnu/ld-2.23.so
+7f7f95360000-7f7f95361000 rw-p 00000000 00:00 0 
+7fffe98f4000-7fffe9977000 rw-p 00000000 00:00 0                          [stack]
+7fffe9978000-7fffe997b000 r--p 00000000 00:00 0                          [vvar]
+7fffe997b000-7fffe997d000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+[sombra:11764] *** Process received signal ***
+[sombra:11764] Signal: Aborted (6)
+[sombra:11764] Signal code:  (-6)
+[sombra:11764] [ 0] /lib/x86_64-linux-gnu/libpthread.so.0(+0x11390)[0x7f7f93d5d390]
+[sombra:11764] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7f7f939b7428]
+[sombra:11764] [ 2] /lib/x86_64-linux-gnu/libc.so.6(abort+0x16a)[0x7f7f939b902a]
+[sombra:11764] [ 3] /lib/x86_64-linux-gnu/libc.so.6(+0x777ea)[0x7f7f939f97ea]
+[sombra:11764] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7f7f93a0237a]
+[sombra:11764] [ 5] /lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7f7f93a0653c]
+[sombra:11764] [ 6] ./mvp-student.cx(main+0x3ad)[0x430d91]
+[sombra:11764] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f7f939a2830]
+[sombra:11764] [ 8] ./mvp-student.cx(_start+0x29)[0x42fa19]
+[sombra:11764] *** End of error message ***
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 1 with PID 42804 on node lucio exited on signal 6 (Aborted).
+--------------------------------------------------------------------------

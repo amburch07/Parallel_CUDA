@@ -1,0 +1,24 @@
+Number of ranks vs time to execute
+Rank 0 Converting time 0.634234
+Rank 0 Sub result calculation time 0.303974
+Full Time: 1.242755
+Rank 0 Converting time 0.639253
+Rank 1 Sub result calculation time 0.030368
+Rank 2 Sub result calculation time 0.030386
+Rank 3 Sub result calculation time 0.030350
+Rank 4 Sub result calculation time 0.031456
+Rank 5 Sub result calculation time 0.031780
+Rank 6 Sub result calculation time 0.031419
+Rank 7 Sub result calculation time 0.030415
+Rank 8 Sub result calculation time 0.031413
+Rank 0 Sub result calculation time 0.032532
+Rank 9 Sub result calculation time 0.031396
+Full Time: 1.474126
+Size of matrix vs communication time for all communication performed
+Rank 0 Converting time 0.680799
+Rank 1 Sub result calculation time 0.060725
+Rank 2 Sub result calculation time 0.062821
+Rank 3 Sub result calculation time 0.060746
+Rank 4 Sub result calculation time 0.060799
+Rank 0 Sub result calculation time 0.065015
+Full Time: 1.428411

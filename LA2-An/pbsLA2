@@ -1,0 +1,38 @@
+#!/bin/bash
+#PBS -l nodes=5:ppn=12
+#PBS -l walltime=00:2:00
+#PBS -q batch
+#PBS -N run
+#PBS -j oe
+
+#cat $PBS_NODEFILE
+
+cd ~/LA2
+
+# Number of ranks vs time to execute
+echo "Number of ranks vs time to execute"
+echo "Serial on Reinhardt"
+mpiexec -np 1 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 10000
+# mpiexec -np 2 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 1000
+# mpiexec -np 3 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 1000
+mpiexec -np 4 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 10000
+# mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 1000
+# mpiexec -np 6 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 1000
+# mpiexec -np 7 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 1000
+# mpiexec -np 8 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 1000
+# mpiexec -np 9 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 1000
+# mpiexec -np 10 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 10000
+
+# Size of matrix vs communication time for all communication performed
+# echo "Size of matrix vs communication time for all communication performed"
+# mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 5
+# mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 10
+# # mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 20
+# # mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 50
+# # mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 100
+# # mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 150
+# # mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 200
+# # mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 300
+# # mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 400
+# # mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 500
+# mpiexec -np 5 --map-by ppr:1:node --hostfile $PBS_NODEFILE ./mvp-student.cx 10000

@@ -1,0 +1,11 @@
+Number of ranks vs time to execute
+Serial on Reinhardt
+Rank 0 Converting time 0.634790
+Rank 0 Sub result calculation time 0.303603
+Full Time: 1.239658
+Rank 0 Converting time 0.639217
+Rank 1 Sub result calculation time 0.078645
+Rank 2 Sub result calculation time 0.078524
+Rank 0 Sub result calculation time 0.081248
+Rank 3 Sub result calculation time 0.078582
+Full Time: 1.350792
