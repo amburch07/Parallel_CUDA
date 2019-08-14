@@ -71,8 +71,8 @@ int main( void ) {
     // Copy a and b to GPUs
     for(int dev=0,pos=0; dev<2; pos+=Ns[dev], dev++) {
         cudaSetDevice(dev);
-        cudaMemcpy( dev_a[dev], a+pos, Ns[dev] * sizeof(int), cudaMemcpyHostToDevice);
-        cudaMemcpy( dev_b[dev], b+pos, Ns[dev] * sizeof(int), cudaMemcpyHostToDevice);
+        cudaMemcpy(dev_a[dev], a+pos, Ns[dev] * sizeof(int), cudaMemcpyHostToDevice);
+        cudaMemcpy(dev_b[dev], b+pos, Ns[dev] * sizeof(int), cudaMemcpyHostToDevice);
     }
 
     // Time
@@ -80,7 +80,7 @@ int main( void ) {
     for(int i=0;i<10000;++i) {
         for(int dev=0; dev<2; dev++) {
             cudaSetDevice(dev);
-            dot<<<((N*N)+255)/256, 256>>>( dev_a[dev], dev_b[dev], dev_c[dev], Ns[dev] );
+            dot<<<((N*N)+255)/256, 256>>>(dev_a[dev], dev_b[dev], dev_c[dev], Ns[dev]);
         }
     }
     
