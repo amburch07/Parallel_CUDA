@@ -50,7 +50,7 @@ int main()
 	}
 
     //Results
-	printf("Size of N*N: %d \nResult: %d \nTime in kernel %f", N * N, mySum, milliseconds);
+	printf("Size of N*N: %d \nResult: %d \nTime in kernel %f \n", N * N, mySum, milliseconds);
 
     // cudaDeviceReset must be called before exiting in order for profiling and
     // tracing tools such as Nsight and Visual Profiler to show complete traces.
