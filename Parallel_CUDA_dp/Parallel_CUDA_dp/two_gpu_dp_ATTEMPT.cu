@@ -66,8 +66,8 @@ int main()
 
 cudaError_t cuda2GPUDotProduct(int *c, const int *a, const int *b, unsigned int N)
 {
-    int size = N*N
-    int subSize = N*(N/2)
+    int size = N*N;
+    int subSize = N*(N/2);
 
     int* dev_c_0;
     int* dev_a_0;
@@ -76,7 +76,7 @@ cudaError_t cuda2GPUDotProduct(int *c, const int *a, const int *b, unsigned int 
     int* dev_b;
 
     cudaError_t cudaStatus;
-    cudaStatus = cudaSetDevice(0)
+    cudaStatus = cudaSetDevice(0);
 
     // Allocate GPU buffers for three vectors (two input, one output)    .
     cudaStatus = cudaMalloc((void**)&dev_c_0, subSize * sizeof(int));  // allocating the space on the gpu
